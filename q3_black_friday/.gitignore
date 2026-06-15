@@ -1,0 +1,4 @@
+# Bytecode do CPython (atrelado a versao exata; nao versionar).
+__pycache__/
+*.pyc
+*.pyo

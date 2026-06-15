@@ -1,0 +1,278 @@
+{
+  "aviso_placeholder": true,
+  "observacao": "Metricas obtidas com DADOS SINTETICOS (placeholder).",
+  "n_linhas": 4000,
+  "n_treino": 3000,
+  "n_teste": 1000,
+  "estimador_base": "LogisticRegression(max_iter=2000, random_state=SEMENTE) | SEMENTE = 42",
+  "abordagem": "MultiOutputClassifier (multi-saida) dentro de Pipeline+ColumnTransformer",
+  "alvos": {
+    "product_category": {
+      "classes": [
+        "Alimentos",
+        "Beleza",
+        "Brinquedos",
+        "Casa",
+        "Eletronicos",
+        "Esportes",
+        "Roupas"
+      ],
+      "metricas_globais": {
+        "acuracia_global": 0.373,
+        "f1_macro": 0.2025,
+        "f1_ponderado": 0.2867,
+        "acaso_uniforme": 0.1429
+      },
+      "certeza_media_predict_proba": 0.3453,
+      "metricas_por_classe": {
+        "Alimentos": {
+          "suporte": 156,
+          "TP": 49,
+          "FN": 107,
+          "FP": 92,
+          "TN": 752,
+          "sensibilidade": 0.3141,
+          "especificidade": 0.891,
+          "acuracia_classe": 0.801,
+          "f1": 0.33
+        },
+        "Beleza": {
+          "suporte": 210,
+          "TP": 132,
+          "FN": 78,
+          "FP": 203,
+          "TN": 587,
+          "sensibilidade": 0.6286,
+          "especificidade": 0.743,
+          "acuracia_classe": 0.719,
+          "f1": 0.4844
+        },
+        "Brinquedos": {
+          "suporte": 89,
+          "TP": 2,
+          "FN": 87,
+          "FP": 10,
+          "TN": 901,
+          "sensibilidade": 0.0225,
+          "especificidade": 0.989,
+          "acuracia_classe": 0.903,
+          "f1": 0.0396
+        },
+        "Casa": {
+          "suporte": 92,
+          "TP": 3,
+          "FN": 89,
+          "FP": 25,
+          "TN": 883,
+          "sensibilidade": 0.0326,
+          "especificidade": 0.9725,
+          "acuracia_classe": 0.886,
+          "f1": 0.05
+        },
+        "Eletronicos": {
+          "suporte": 244,
+          "TP": 187,
+          "FN": 57,
+          "FP": 297,
+          "TN": 459,
+          "sensibilidade": 0.7664,
+          "especificidade": 0.6071,
+          "acuracia_classe": 0.646,
+          "f1": 0.5137
+        },
+        "Esportes": {
+          "suporte": 137,
+          "TP": 0,
+          "FN": 137,
+          "FP": 0,
+          "TN": 863,
+          "sensibilidade": 0.0,
+          "especificidade": 1.0,
+          "acuracia_classe": 0.863,
+          "f1": 0.0
+        },
+        "Roupas": {
+          "suporte": 72,
+          "TP": 0,
+          "FN": 72,
+          "FP": 0,
+          "TN": 928,
+          "sensibilidade": 0.0,
+          "especificidade": 1.0,
+          "acuracia_classe": 0.928,
+          "f1": 0.0
+        }
+      }
+    },
+    "payment_method": {
+      "classes": [
+        "Boleto",
+        "Cartao_Credito",
+        "Cartao_Debito",
+        "Dinheiro",
+        "PIX"
+      ],
+      "metricas_globais": {
+        "acuracia_global": 0.388,
+        "f1_macro": 0.2968,
+        "f1_ponderado": 0.332,
+        "acaso_uniforme": 0.2
+      },
+      "certeza_media_predict_proba": 0.3648,
+      "metricas_por_classe": {
+        "Boleto": {
+          "suporte": 172,
+          "TP": 17,
+          "FN": 155,
+          "FP": 24,
+          "TN": 804,
+          "sensibilidade": 0.0988,
+          "especificidade": 0.971,
+          "acuracia_classe": 0.821,
+          "f1": 0.1596
+        },
+        "Cartao_Credito": {
+          "suporte": 167,
+          "TP": 82,
+          "FN": 85,
+          "FP": 124,
+          "TN": 709,
+          "sensibilidade": 0.491,
+          "especificidade": 0.8511,
+          "acuracia_classe": 0.791,
+          "f1": 0.4397
+        },
+        "Cartao_Debito": {
+          "suporte": 149,
+          "TP": 0,
+          "FN": 149,
+          "FP": 0,
+          "TN": 851,
+          "sensibilidade": 0.0,
+          "especificidade": 1.0,
+          "acuracia_classe": 0.851,
+          "f1": 0.0
+        },
+        "Dinheiro": {
+          "suporte": 222,
+          "TP": 93,
+          "FN": 129,
+          "FP": 181,
+          "TN": 597,
+          "sensibilidade": 0.4189,
+          "especificidade": 0.7674,
+          "acuracia_classe": 0.69,
+          "f1": 0.375
+        },
+        "PIX": {
+          "suporte": 290,
+          "TP": 196,
+          "FN": 94,
+          "FP": 283,
+          "TN": 427,
+          "sensibilidade": 0.6759,
+          "especificidade": 0.6014,
+          "acuracia_classe": 0.623,
+          "f1": 0.5098
+        }
+      }
+    },
+    "age_group": {
+      "classes": [
+        "0-17",
+        "18-25",
+        "26-35",
+        "36-45",
+        "46-50",
+        "51-55",
+        "55+"
+      ],
+      "metricas_globais": {
+        "acuracia_global": 0.405,
+        "f1_macro": 0.3385,
+        "f1_ponderado": 0.3672,
+        "acaso_uniforme": 0.1429
+      },
+      "certeza_media_predict_proba": 0.335,
+      "metricas_por_classe": {
+        "0-17": {
+          "suporte": 105,
+          "TP": 18,
+          "FN": 87,
+          "FP": 21,
+          "TN": 874,
+          "sensibilidade": 0.1714,
+          "especificidade": 0.9765,
+          "acuracia_classe": 0.892,
+          "f1": 0.25
+        },
+        "18-25": {
+          "suporte": 145,
+          "TP": 47,
+          "FN": 98,
+          "FP": 89,
+          "TN": 766,
+          "sensibilidade": 0.3241,
+          "especificidade": 0.8959,
+          "acuracia_classe": 0.813,
+          "f1": 0.3345
+        },
+        "26-35": {
+          "suporte": 207,
+          "TP": 146,
+          "FN": 61,
+          "FP": 202,
+          "TN": 591,
+          "sensibilidade": 0.7053,
+          "especificidade": 0.7453,
+          "acuracia_classe": 0.737,
+          "f1": 0.5261
+        },
+        "36-45": {
+          "suporte": 149,
+          "TP": 21,
+          "FN": 128,
+          "FP": 30,
+          "TN": 821,
+          "sensibilidade": 0.1409,
+          "especificidade": 0.9647,
+          "acuracia_classe": 0.842,
+          "f1": 0.21
+        },
+        "46-50": {
+          "suporte": 162,
+          "TP": 53,
+          "FN": 109,
+          "FP": 88,
+          "TN": 750,
+          "sensibilidade": 0.3272,
+          "especificidade": 0.895,
+          "acuracia_classe": 0.803,
+          "f1": 0.3498
+        },
+        "51-55": {
+          "suporte": 156,
+          "TP": 112,
+          "FN": 44,
+          "FP": 154,
+          "TN": 690,
+          "sensibilidade": 0.7179,
+          "especificidade": 0.8175,
+          "acuracia_classe": 0.802,
+          "f1": 0.5308
+        },
+        "55+": {
+          "suporte": 76,
+          "TP": 8,
+          "FN": 68,
+          "FP": 11,
+          "TN": 913,
+          "sensibilidade": 0.1053,
+          "especificidade": 0.9881,
+          "acuracia_classe": 0.921,
+          "f1": 0.1684
+        }
+      }
+    }
+  }
+}

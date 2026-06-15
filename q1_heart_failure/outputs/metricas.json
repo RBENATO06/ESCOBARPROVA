@@ -1,0 +1,41 @@
+{
+  "algoritmo": "GaussianMixture",
+  "tipo_covariancia": "full",
+  "scaler": "RobustScaler",
+  "binarias_no_treino": false,
+  "time_no_treino": false,
+  "caracteristicas_treino": [
+    "age",
+    "creatinine_phosphokinase",
+    "ejection_fraction",
+    "platelets",
+    "serum_creatinine",
+    "serum_sodium"
+  ],
+  "n_componentes": 2,
+  "bic": 4852.6775737305,
+  "silhouette": 0.45424978085628215,
+  "silhouette_na_selecao": 0.45424978085628215,
+  "davies_bouldin": 1.8073631410655866,
+  "calinski_harabasz": 68.86287040982839,
+  "n_por_cluster": {
+    "0": 57,
+    "1": 242
+  },
+  "taxa_death_event_por_cluster": {
+    "0": 0.43859649122807015,
+    "1": 0.29338842975206614
+  },
+  "semente": 42,
+  "sensibilidade_k_por_limiar": {
+    "0.005": 2,
+    "0.010": 2,
+    "0.020": 2
+  },
+  "variancia_pca": {
+    "pc1": 0.38992175233638027,
+    "pc2": 0.3747659442584256,
+    "soma": 0.7646876965948058
+  },
+  "convergiu": true
+}

@@ -1,0 +1,105 @@
+{
+  "random_state": 42,
+  "n_amostras_total": 6497,
+  "n_treino": 5197,
+  "n_teste": 1300,
+  "caracteristicas": [
+    "fixed acidity",
+    "volatile acidity",
+    "citric acid",
+    "residual sugar",
+    "chlorides",
+    "free sulfur dioxide",
+    "total sulfur dioxide",
+    "density",
+    "pH",
+    "sulphates",
+    "alcohol"
+  ],
+  "classes_7": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "comparacao_modelos_7classes": {
+    "ExtraTrees": {
+      "acuracia": 0.6946,
+      "f1_macro": 0.3987,
+      "f1_weighted": 0.683,
+      "acuracia_por_classe": {
+        "3": 0.0,
+        "4": 0.1395,
+        "5": 0.7033,
+        "6": 0.8148,
+        "7": 0.5556,
+        "8": 0.359,
+        "9": 0.0
+      }
+    },
+    "AdaBoost": {
+      "acuracia": 0.5185,
+      "f1_macro": 0.2107,
+      "f1_weighted": 0.4921,
+      "acuracia_por_classe": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.6051,
+        "6": 0.6314,
+        "7": 0.2639,
+        "8": 0.0,
+        "9": 0.0
+      }
+    },
+    "MLP": {
+      "acuracia": 0.5623,
+      "f1_macro": 0.2687,
+      "f1_weighted": 0.5466,
+      "acuracia_por_classe": {
+        "3": 0.0,
+        "4": 0.0465,
+        "5": 0.6495,
+        "6": 0.6261,
+        "7": 0.4306,
+        "8": 0.0769,
+        "9": 0.0
+      }
+    }
+  },
+  "vencedor_7classes": "ExtraTrees",
+  "suporte_por_classe_teste": {
+    "3": 6,
+    "4": 43,
+    "5": 428,
+    "6": 567,
+    "7": 216,
+    "8": 39,
+    "9": 1
+  },
+  "comparacao_7classes_vs_3faixas": {
+    "definicao_faixas": "baixa<=5 | media=6 | alta>=7",
+    "modelo": "ExtraTrees",
+    "sete_classes": {
+      "acuracia": 0.6946,
+      "f1_macro": 0.3987,
+      "f1_weighted": 0.683
+    },
+    "tres_faixas": {
+      "acuracia": 0.7323,
+      "f1_macro": 0.7241,
+      "f1_weighted": 0.732
+    },
+    "ganho_f1_macro_faixas_vs_7classes": 0.3254,
+    "acuracia_por_faixa": {
+      "baixa": 0.74,
+      "media": 0.7866,
+      "alta": 0.5977
+    },
+    "modelo_principal_inferencia": "3 faixas",
+    "justificativa": "As 3 faixas atingem F1-macro substancialmente maior e oferecem previsao mais confiavel/acionavel (baixa/media/alta), por isso sao o modelo PRINCIPAL de inferencia."
+  },
+  "modelo_salvo_principal": "modelo_campeao_faixas.joblib"
+}

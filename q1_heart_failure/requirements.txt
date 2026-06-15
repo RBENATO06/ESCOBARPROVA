@@ -1,0 +1,9 @@
+# Dependencias do mini-projeto Q1 - Heart Failure (agrupamento com GaussianMixture)
+# Versoes testadas no ambiente de desenvolvimento (Python 3.14.4).
+scikit-learn==1.8.0
+pandas==3.0.2
+numpy==2.4.4
+scipy==1.17.1
+matplotlib==3.11.0
+seaborn==0.13.2
+joblib==1.5.3
