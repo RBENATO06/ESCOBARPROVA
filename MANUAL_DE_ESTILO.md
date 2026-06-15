@@ -1,7 +1,7 @@
 # MANUAL DE ESTILO DEFINITIVO — aluno_3
 
 > Arquetipo: **CIENTISTA DE DADOS EXPLORADOR**. Referencia unica para refinar
-> `q1_heart_failure`, `q2_wine_quality` e `q3_black_friday` ate que pareçam
+> `Exercicio 1_heart_failure`, `Exercicio 2_wine_quality` e `Exercicio 3_black_friday` ate que pareçam
 > escritos pela MESMA pessoa — distinta do aluno_1 (didatico/iniciante) e do
 > aluno_2 (engenheiro/modular).
 
@@ -58,7 +58,7 @@ API do scikit-learn/pandas permanece em ingles (inevitavel).
 
 ### Constantes (MAIUSCULAS)
 - `SEMENTE = 42` ← **assinatura obrigatoria, NUNCA `RANDOM_STATE`.**
-  [CORRIGIR Q2: `q2_wine_quality/src/main.py` usa `RANDOM_STATE` ~10x — destoa de
+  [CORRIGIR Q2: `Exercicio 2_wine_quality/src/main.py` usa `RANDOM_STATE` ~10x — destoa de
   Q1/Q3. Trocar para `SEMENTE`. Corrigir tambem o texto do README do Q2 que diz
   "random_state=42" para "SEMENTE (random_state) = 42".]
 - Caminhos: padronizar UMA familia nos 3. Adotar o par do Q2/Q3:
